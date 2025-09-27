@@ -35,6 +35,7 @@ public class TasksController {
 			log.info("Task created successfully with ID: {}", task.getId());
 			return ResponseEntity.ok(task);
 		} catch (Exception e) {
+			log.error("Failed to create Task", e);
 			return ResponseEntity.status(500).body("Failed to create task: " + e.getMessage());
 		}
 	}

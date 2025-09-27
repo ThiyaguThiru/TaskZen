@@ -13,6 +13,6 @@ public class SwaggerConfiguration {
 	public OpenAPI taskZenOpenAPI() {
 		return new OpenAPI().info(new Info().title("TaskZen API")
 				.description("API documentation for Task and Notes management service").version("1.0.0")
-				.contact(new Contact().name("TaskZen").url("https://github.com/ThiyaguThiru/TaskZen")));
+				.contact(new Contact().name("TaskZen GitHub").url("https://github.com/ThiyaguThiru/TaskZen")));
 	}
 }

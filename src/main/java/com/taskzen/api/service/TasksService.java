@@ -21,6 +21,7 @@ public class TasksService {
 	public Task createTask(TaskModel model) {
 		Task task = new Task();
 		BeanUtils.copyProperties(model, task);
+		task.setId(null);
 		if (task.getIsCompleted() == null) {
 			task.setIsCompleted(false);
 		}
